@@ -1,0 +1,8 @@
+To implement the logic of refreshing daily likes for millions of users from over 150 countries in a scalable way, we can follow the following steps:
+
+1.We can maintain user's data in a database that keeps track of each user's remaining daily likes, last refresh time, and their time zone.
+2.As each user is in a different time zone, we need to calculate the local time of 12:00 pm in their respective time zones.
+3.We can set up a scheduled job that runs at a fixed time every day, preferably at 12:00 pm (noon), UTC time. This scheduled job will be responsible for refreshing the daily likes for all users.
+4.For each user, we can update their remaining likes count to the maximum value (e.g., 10) since it's a daily refresh.
+  We can update the last refresh timestamp to the current time.
+5.To optimize the process, we can employ caching mechanisms to reduce database load. For example, we could store user likes data in an in-memory cache or a distributed cache system.
