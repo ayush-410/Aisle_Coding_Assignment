@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-ExtraBold.ttf">
+            <string>Gilroy-ExtraBold</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="UpgradePremiumTableViewCell" customModule="Aisle_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="FzK-dR-XTL">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="102"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDd-9g-2dH">
+                                <rect key="frame" x="0.0" y="0.0" width="215.33333333333334" height="102"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Interested In You" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xE-ZC-fjI">
+                                        <rect key="frame" x="25" y="10" width="185.33333333333334" height="27"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEh-ry-jlf">
+                                        <rect key="frame" x="25" y="47" width="185.33333333333334" height="36"/>
+                                        <string key="text">Premium members can
+view all their likes at once</string>
+                                        <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="15"/>
+                                        <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="SEh-ry-jlf" firstAttribute="trailing" secondItem="1xE-ZC-fjI" secondAttribute="trailing" id="0vQ-iV-fKE"/>
+                                    <constraint firstAttribute="bottom" secondItem="SEh-ry-jlf" secondAttribute="bottom" constant="20" id="3Rx-ST-e0d"/>
+                                    <constraint firstAttribute="width" constant="215.33000000000001" id="Paq-2a-WrD"/>
+                                    <constraint firstItem="SEh-ry-jlf" firstAttribute="leading" secondItem="1xE-ZC-fjI" secondAttribute="leading" id="Rph-zu-YSx"/>
+                                    <constraint firstAttribute="trailing" secondItem="1xE-ZC-fjI" secondAttribute="trailing" constant="5" id="YJk-rT-LFn"/>
+                                    <constraint firstItem="1xE-ZC-fjI" firstAttribute="top" secondItem="aDd-9g-2dH" secondAttribute="top" constant="10" id="b9q-Kq-F2m"/>
+                                    <constraint firstItem="SEh-ry-jlf" firstAttribute="top" secondItem="1xE-ZC-fjI" secondAttribute="bottom" constant="10" id="l7S-4Y-eSE"/>
+                                    <constraint firstItem="1xE-ZC-fjI" firstAttribute="leading" secondItem="aDd-9g-2dH" secondAttribute="leading" constant="25" id="wo7-hu-7uf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOn-7w-5g8">
+                                <rect key="frame" x="215.33333333333337" y="0.0" width="164.66666666666663" height="102"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5S-EJ-PkH">
+                                        <rect key="frame" x="26.666666666666657" y="32" width="113" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Rx4-Fk-LFh"/>
+                                            <constraint firstAttribute="width" constant="113" id="p5W-8f-ARP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Upgrade">
+                                            <fontDescription key="titleFontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="15"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseBackgroundColor" red="0.9882352941176471" green="0.87450980392156863" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164.66999999999999" id="AlU-uF-yvj"/>
+                                    <constraint firstAttribute="trailing" secondItem="P5S-EJ-PkH" secondAttribute="trailing" constant="25" id="rHW-ry-xJX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="P5S-EJ-PkH" firstAttribute="bottom" secondItem="SEh-ry-jlf" secondAttribute="bottom" id="3gO-J7-3Xq"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FzK-dR-XTL" secondAttribute="bottom" id="1b7-t7-bJ7"/>
+                    <constraint firstAttribute="trailing" secondItem="FzK-dR-XTL" secondAttribute="trailing" id="CGC-wa-bhM"/>
+                    <constraint firstItem="FzK-dR-XTL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="P59-zx-dFN"/>
+                    <constraint firstItem="FzK-dR-XTL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XnE-Rg-yAj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="159.54198473282443" y="45.070422535211272"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

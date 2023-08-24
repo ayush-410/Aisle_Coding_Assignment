@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-ExtraBold.ttf">
+            <string>Gilroy-ExtraBold</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotesHeadingTableViewCell" rowHeight="121" id="KGk-i7-Jjw" customClass="NotesHeadingTableViewCell" customModule="Aisle_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-vK-Tbd">
+                        <rect key="frame" x="10" y="10" width="392" height="101"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5s-gC-Xjj">
+                                <rect key="frame" x="160.33333333333334" y="20" width="71.666666666666657" height="33"/>
+                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="27"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal messages to you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ub-dV-BAf">
+                                <rect key="frame" x="89.000000000000014" y="69" width="214.33333333333337" height="22"/>
+                                <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7ub-dV-BAf" firstAttribute="centerX" secondItem="CgN-vK-Tbd" secondAttribute="centerX" id="2N0-RJ-6W1"/>
+                            <constraint firstItem="O5s-gC-Xjj" firstAttribute="centerX" secondItem="CgN-vK-Tbd" secondAttribute="centerX" id="8Xn-dH-dei"/>
+                            <constraint firstItem="O5s-gC-Xjj" firstAttribute="top" secondItem="CgN-vK-Tbd" secondAttribute="top" constant="20" id="G2z-yA-73t"/>
+                            <constraint firstItem="7ub-dV-BAf" firstAttribute="top" secondItem="O5s-gC-Xjj" secondAttribute="bottom" constant="16" id="c5k-eQ-kbL"/>
+                            <constraint firstAttribute="height" constant="101" id="vtl-9s-ZOH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CgN-vK-Tbd" secondAttribute="bottom" constant="10" id="Ry8-Im-Dwv"/>
+                    <constraint firstItem="CgN-vK-Tbd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hHM-PP-hBv"/>
+                    <constraint firstAttribute="trailing" secondItem="CgN-vK-Tbd" secondAttribute="trailing" constant="10" id="r33-tN-Ii2"/>
+                    <constraint firstItem="CgN-vK-Tbd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wNi-qB-IFj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="notesHeading" destination="O5s-gC-Xjj" id="gM0-gu-Uao"/>
+                <outlet property="notesMessage" destination="7ub-dV-BAf" id="hQh-Bd-S0n"/>
+            </connections>
+            <point key="canvasLocation" x="45.801526717557252" y="-37.676056338028168"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
